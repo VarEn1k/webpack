@@ -11,12 +11,13 @@ const btn = document.createElement('button');
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello');
 
-myIcon.src = Icon;
+  const myIcon = new Image();
+  myIcon.src = Icon;
 
 element.appendChild(myIcon);
 
 btn.innerHTML = 'Click me and check the console!';
-btn.onclick = printMe()
+btn.onclick = printMe;
 
   element.appendChild(btn);
 
